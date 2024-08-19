@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <nav className="w-full py-0 flex items-center justify-center text-sm sticky top-0 z-50 bg-[#fffafa] ">
       {/* Mobile Navigation */}
@@ -54,11 +56,51 @@ const Navbar = () => {
           </span>
         </div>
         <ul className="flex items-center gap-x-4 md:gap-x-7 lg:gap-x-10">
-          <li className="desktop-li">Home</li>
-          <li className="desktop-li">Blogs</li>
-          <li className="desktop-li">Community</li>
-          <li className="desktop-li">About</li>
-          <li className="desktop-li">Contact</li>
+          <Link to="/">
+            <li
+              className={`desktop-li ${
+                location.pathname === "/" ? "active-nav" : ""
+              }`}
+            >
+              Home
+            </li>
+          </Link>
+          <Link to="/blogs">
+            <li
+              className={`desktop-li ${
+                location.pathname === "/blogs" ? "active-nav" : ""
+              }`}
+            >
+              Blogs
+            </li>
+          </Link>
+          <Link to="/community">
+            <li
+              className={`desktop-li ${
+                location.pathname === "/community" ? "active-nav" : ""
+              }`}
+            >
+              Community
+            </li>
+          </Link>
+          <Link to="/about">
+            <li
+              className={`desktop-li ${
+                location.pathname === "/about" ? "active-nav" : ""
+              }`}
+            >
+              About
+            </li>
+          </Link>
+          <Link to="/contact">
+            <li
+              className={`desktop-li ${
+                location.pathname === "/contact" ? "active-nav" : ""
+              }`}
+            >
+              Contact
+            </li>
+          </Link>
         </ul>
         <div className="w-8 h-8 bg-green-200 rounded-full cursor-pointer"></div>
       </div>

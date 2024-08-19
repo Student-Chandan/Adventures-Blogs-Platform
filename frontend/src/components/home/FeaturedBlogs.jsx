@@ -1,16 +1,17 @@
+import Blog from "../blogs/Blog";
+import FeaturedBlog from "./FeaturedBlog";
+
 const FeaturedBlogs = () => {
   return (
-    <section className="bg-white h-[450px] w-full px-5 lg:px-20 py-4">
-      <h1 className="text-3xl text-center py-2 font-semibold blue_gradient">
-        Featured Blogs
+    <>
+    <h1 className="text-2xl pb-8 pt-2 border-b-4 border-orange-300 font-semibold text-center px-3 w-64 mt-5 mx-auto h_2 relative">
+        Featured <span className="orange_gradient">Blogs</span>
       </h1>
+    <section className="w-full mx-auto sm:w-11/12 lg:w-[85%] px-2 mt-10 p-5 h-auto blogContainer">
+      <FeaturedBlog/>
 
-      <div className="w-full h-auto p-2 gap-x-6 gap-y-6 flex items-center bg-green-200 mt-10 flex-wrap">
-        <div className="w-80 drop-shadow h-48 rounded-lg bg-slate-50 mx-auto"></div>
-        <div className="w-80 drop-shadow h-48 rounded-lg bg-slate-50 mx-auto"></div>
-        <div className="w-80 drop-shadow h-48 rounded-lg bg-slate-50 mx-auto"></div>
-      </div>
     </section>
+    </>
   );
 };
 

@@ -1,10 +1,13 @@
-
+import Navbar from "../components/Navbar";
 const Contact = () => {
   return (
-    <div>
-      Contact Page
-    </div>
-  )
-}
+    <>
+      <section className="w-full">
+        <Navbar />
+        Contact Page
+      </section>
+    </>
+  );
+};
 
-export default Contact
+export default Contact;

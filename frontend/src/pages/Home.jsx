@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import FeaturedBlogs from "../components/home/FeaturedBlogs";
 import HeroSection from "../components/home/HeroSection";
+import HomePageBlogs from "../components/home/HomePageBlogs";
 import Navbar from "../components/Navbar";
 
 const Home = () => {
@@ -15,7 +16,9 @@ const Home = () => {
           present in the market when why we come in your platform, then my
           answer is that there you can add your own blog."
       />
+
       <FeaturedBlogs />
+      <HomePageBlogs/>
       <Footer/>
     </section>
   );

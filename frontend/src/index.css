@@ -2,19 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   /* background: greenyellow; */
   background: snow;
   height: 100vh;
   overflow-y: auto;
 }
 
-@media(min-width:1500px){
-  main{
+@media (min-width: 1500px) {
+  main {
     width: 1450px;
     margin: auto;
   }
 }
+
 
 /* Tailwind Styles */
 @layer utilities {
@@ -59,7 +60,7 @@ body{
   }
 
   .glassmorphism {
-    @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+    @apply rounded-xl border border-gray-50 bg-white/5 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.1)] backdrop-blur p-5;
   }
 
   .prompt_layout {
@@ -113,10 +114,13 @@ body{
   .flex-between {
     @apply flex justify-between items-center;
   }
-  .btn{
+  .btn {
     @apply px-3 py-2 bg-orange-50 transition-all hover:bg-orange-100 text-sm font-medium rounded;
   }
-  .desktop-li{
-    @apply cursor-pointer relative after:absolute after:w-full after:-bottom-2 after:h-[3px] after:left-0 transition-all hover:after:bg-orange-200 hover:text-orange-400 after:rounded-full;
+  .desktop-li {
+    @apply cursor-pointer relative transition-all hover:after:bg-orange-200 hover:text-orange-400 after:rounded-full after:absolute after:w-full after:-bottom-2 after:h-[3px] after:left-0;
+  }
+  .active-nav {
+    @apply after:rounded-full after:absolute after:w-full after:-bottom-2 after:h-[3px] after:left-0 after:bg-orange-200 text-orange-400;
   }
 }

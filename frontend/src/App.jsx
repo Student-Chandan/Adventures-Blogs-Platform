@@ -1,11 +1,21 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+
+// <============= Page imports strat here =============>
+// <------------- User pages imports --------------->
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Community from "./pages/Community";
 import BlogDetailsPage from "./pages/BlogDetailsPage";
+
+
+// <------------- Dashboard pages imports --------------->
+import Dashboard from "./pages/dashboard/Dashboard";
+
+
+// <============= Components imports strat here =============>
 import Layout from "./components/Layout";
 
 function App() {
@@ -35,6 +45,11 @@ function App() {
           <Route path="/community" element={<Layout><Community /></Layout>}/>
 
           {/* <============ User Routes End here ============> */}
+
+          {/* <============ Dashboard Routes Start here ============> */}
+
+          <Route path="/dashboard" element={<Dashboard/>} />
+          {/* <============ Dashboard Routes End here ============> */}
         </Routes>
       </main>
     </>

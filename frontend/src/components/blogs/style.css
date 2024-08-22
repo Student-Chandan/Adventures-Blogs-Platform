@@ -1,0 +1,21 @@
+@media(max-width: 580px){
+    .blogContainer .blog_box{
+        margin:auto;
+        width: 80%;
+        height: 440px !important;
+    }
+    .blog_box .blogImg{
+        height: 250px;
+    }
+}
+
+@media(max-width: 450px){
+    .blogContainer .blog_box{
+        margin:auto;
+        width: 260px;
+        height: 370px !important;
+    }
+    .blog_box .blogImg{
+        height: 160px;
+    }
+}

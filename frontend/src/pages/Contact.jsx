@@ -1,10 +1,12 @@
 
 const Contact = () => {
   return (
-    <div>
-      Contact Page
-    </div>
-  )
-}
+    <>
+      <section className="w-full">
+        Contact Page
+      </section>
+    </>
+  );
+};
 
-export default Contact
+export default Contact;

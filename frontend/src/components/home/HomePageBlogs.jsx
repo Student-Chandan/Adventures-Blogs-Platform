@@ -1,5 +1,5 @@
 import "./style.css";
-import Blog from "../blogs/Blog";
+import BlogCard from "../blogs/BlogCard";
 
 const HomePageBlogs = () => {
   return (
@@ -8,7 +8,7 @@ const HomePageBlogs = () => {
         Latest <span className="orange_gradient">Blogs</span>
       </h1>
       <section className="w-full sm:w-11/12 lg:w-[85%] px-2 p-5 h-auto mx-auto mt-10 gap-x-4 gap-y-7 flex items-center flex-wrap blogContainer">
-        <Blog />
+        <BlogCard />
       </section>
     </>
   );

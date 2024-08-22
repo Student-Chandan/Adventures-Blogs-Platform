@@ -17,7 +17,6 @@
 }
 
 .slick-slider > button{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,4 +42,16 @@
 }
 .slick-prev {
   left: -50px;
+}
+
+@media(max-width: 800px){
+  .slick-next {
+    right: -25px;
+    z-index: 99;
+  }
+  .slick-prev {
+    left: -25px;
+    z-index: 99;
+  }
+
 }

@@ -1,4 +1,4 @@
-import Blog from "./Blog";
+import BlogCard from "./BlogCard";
 
 const BlogsContainer = () => {
   return (
@@ -22,9 +22,9 @@ const BlogsContainer = () => {
           </li>
         </ul>
         <section className="px-1 py-5 gap-x-4 gap-y-7 flex items-center h-auto flex-wrap blogContainer">
-          <Blog />
-          <Blog />
-          <Blog />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
         </section>
       </section>
     </>

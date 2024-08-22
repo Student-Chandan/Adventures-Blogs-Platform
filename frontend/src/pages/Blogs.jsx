@@ -1,13 +1,10 @@
-import Navbar from "../components/Navbar";
 import HeroSection from "../components/home/HeroSection";
 import BlogsContainer from "../components/blogs/BlogsContainer";
-import Footer from "../components/Footer";
 
 const Blogs = () => {
   return (
     <>
       <section className="w-full">
-        <Navbar />
         <HeroSection
           title1="Explore"
           title2="Our Blogs with Categories"
@@ -17,7 +14,6 @@ const Blogs = () => {
           answer is that there you can add your own blog."
         />
         <BlogsContainer/>
-        <Footer/>
 
       </section>
     </>

@@ -12,7 +12,7 @@ const FeaturedBlogInfo = ({
     return (
     <>
     <Link to="/blogs/details">
-      <div className="w-52 h-60 rounded-xl shadow-md shadow-slate-200 overflow-hidden relative cursor-pointer">
+      <div className="w-52 mx-auto h-60 rounded-xl shadow-md shadow-slate-200 overflow-hidden relative cursor-pointer">
         <img src={imageUrl} className="w-full h-full absolute -z-[1] opacity-75" alt="banner url" />
         <div className="flex-center h-44 px-3 flex-col text-white z-10">
           <div className="w-44 p-2 text-center mx-auto drop-shadow-md ">

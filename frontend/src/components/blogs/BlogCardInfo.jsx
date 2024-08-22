@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-const BlogInfo = ({
+const BlogCardInfo = ({
   title,
   desc,
   url,
@@ -45,9 +45,9 @@ const BlogInfo = ({
   );
 };
 
-export default BlogInfo;
+export default BlogCardInfo;
 
-BlogInfo.propTypes = {
+BlogCardInfo.propTypes = {
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,

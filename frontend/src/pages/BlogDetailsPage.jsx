@@ -1,74 +1,78 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import img1 from "../assets/1.jpg";
+import BlogPageSidebar from "../components/blogs/BlogPageSidebar";
+import BlogForm from "../components/blogs/BlogForm";
+import BlogTags from "../components/blogs/BlogTags";
+import RelatedTopics from "../components/blogs/RelatedTopics";
+import BlogContent from "../components/blogs/BlogContent";
 
 const BlogDetailsPage = () => {
   return (
     <section className="w-full relative ">
-      <Navbar />
-      <section className="w-full px-2 sm:w-[95%] md:w-[90%] lg:w-[85%] mx-auto h-auto relative flex py-4 my-5 justify-start gap-x-4">
-        <div className="w-[70%] h-auto px-5">
-          <div className="w-full h-auto bg-gradient-to-r mx-auto overflow-hidden">
-            <img src={img1} alt="banner image" className="w-full h-auto" />
-          </div>
-          <div className="py-5">
-            <h1 className="text-2xl font-semibold text-gray-800">
-              There will tile of your blogs posts.
+      {/* <Navbar /> */}
+      <section className="w-full px-2h-auto relative flex py-4 flex-col ">
+        <div className=" sm:w-[95%] md:w-[90%] lg:w-[85%] mx-auto">
+          <div>
+            <h1 className="head_text !text-3xl py-5 !text-gray-900 drop-shadow">
+              There will title of your blog post
             </h1>
-            <div className="flex items-center justify-between py-2">
-              <div className="flex items-center">
-                <div className="w-9 h-9 rounded-full bg-red-200 shadow"></div>
-                <p className="text-sm ml-3 text-gray-700 py-2">Author Name </p>
+            <ul>
+              <li className="text-gray-500 pb-4 text-sm">
+                By Default User - Published in Default Category - April 7 2024 -{" "}
+                <span className="text-orange-600">2 Min Read</span>
+              </li>
+            </ul>
+          </div>
+          <div className="mx-auto w-full flex gap-x-4 justify-between">
+            <div className="w-[70%] h-auto px-5 py-5 bg-white rounded-md drop-shadow">
+              <div className="w-full h-auto bg-gradient-to-r mx-auto rounded-md overflow-hidden">
+                <img src={img1} alt="banner image" className="w-full h-auto" />
               </div>
-              <div>
-                <span className="text-xs">11/12/2023</span>
+
+              <BlogContent />
+              <BlogTags />
+              <RelatedTopics />
+              <div className="py-5 px-2 flex items-center justify-between ">
+                <div className="px-5 py-2 drop-shadow transition-all cursor-pointer hover:shadow hover:shadow-gray-400 rounded-full flex-center gap-x-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    fill="#5a5a5a"
+                    width="16"
+                    height="16"
+                  >
+                    <path d="M447.1 256C447.1 273.7 433.7 288 416 288H109.3l105.4 105.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H416C433.7 224 447.1 238.3 447.1 256z" />
+                  </svg>
+                  <span className="text-[#5a5a5a]">Previous</span>
+                </div>
+                <div className="px-5 py-2 drop-shadow transition-all cursor-pointer hover:shadow hover:shadow-gray-400 rounded-full flex-center gap-x-2">
+                  <span className="text-[#5a5a5a]">Next</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className=""
+                    width="16"
+                    height="16"
+                    fill="#5a5a5a"
+                    viewBox="0 0 448 512"
+                  >
+                    <path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z" />
+                  </svg>
+                </div>
+              </div>
+              <BlogForm />
+              <div className="py-5 px-2">
+                <h2 className="py-8 text-2xl font-semibold pl-3 relative after:absolute after:w-[6px] after:h-8 after:bg-red-200 after:left-0">
+                  Added Comments
+                </h2>
+                
               </div>
             </div>
-            <p className=" text-gray-700 py-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
-              quaerat maiores similique laborum dicta nisi numquam. Ab libero ea
-              pariatur officia ipsam veritatis quia quisquam saepe, vero
-              reprehenderit. Voluptatem perspiciatis minima hic voluptatum magni
-              debitis enim aspernatur veniam. Corrupti suscipit vel ducimus ad
-              laboriosam, ipsa modi, illo maxime veniam voluptas accusantium
-              quam sit cumque illum culpa labore rerum consequatur reiciendis
-              eos eveniet inventore tempore quaerat a necessitatibus? Tempora,
-              quaerat facere eveniet ea quis veritatis vitae voluptate impedit
-              quam perferendis hic nihil perspiciatis fuga nulla culpa eos aut
-              dolorum aliquid iusto ipsum neque! Doloremque aliquid suscipit
-              deleniti quis quibusdam possimus neque expedita dignissimos nisi
-              iure itaque odit, magnam deserunt aut impedit voluptas velit id
-              officiis praesentium quo vitae reiciendis laborum eaque! Dolorem
-              porro vitae enim ex! Voluptatem eveniet accusamus labore alias
-              officia earum sit fugiat ullam voluptas praesentium numquam omnis
-              vitae nobis, suscipit magnam perferendis debitis maiores.
-              Repellendus blanditiis quibusdam, non, sunt doloremque aliquam
-              eum, incidunt architecto nulla omnis ratione autem facere vero
-              quis commodi maxime unde dolore et labore hic voluptatibus?
-              Molestiae aliquam repudiandae a vero, facere architecto corrupti
-              quos quibusdam debitis perferendis impedit aperiam ut veniam eos
-              exercitationem iste voluptas rem laudantium quod. Qui libero
-              reprehenderit tempora alias quae.
-            </p>
-            <h2 className="text-xl font-semibold py-2">What is Computer? </h2>
-            <p className="text-gray-700">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-              reprehenderit natus nulla quis modi in. Dolores unde voluptate
-              ratione autem eaque maxime nemo architecto perferendis excepturi,
-              mollitia officiis, odio tempore.
-            </p>
+            <BlogPageSidebar />
           </div>
         </div>
-        <div className="w-[28%] h-[500px] bg-white drop-shadow-sm grashmorphism sticky top-20 right-10 text-gray-700">
-          <h2 className="px-4 py-3 font-semibold border-b text-lg">Other Categories</h2>
-          <ul className="my-5 ">
-            <li className="w-11/12 mb-2 rounded-sm mx-auto py-3 px-4 drop-shadow-sm transition-all bg-orange-50 hover:bg-red-50 cursor-pointer">Cyber Secuirty</li>
-            <li className="w-11/12 mb-2 rounded-sm mx-auto py-3 px-4 drop-shadow-sm transition-all bg-orange-50 hover:bg-red-50 cursor-pointer">App Development</li>
-            <li className="w-11/12 mb-2 rounded-sm mx-auto py-3 px-4 drop-shadow-sm transition-all bg-orange-50 hover:bg-red-50 cursor-pointer">Web Development</li>
-          </ul>
-        </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </section>
   );
 };

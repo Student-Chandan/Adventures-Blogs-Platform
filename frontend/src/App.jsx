@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Community from "./pages/Community";
 import BlogDetailsPage from "./pages/BlogDetailsPage";
+import Layout from "./components/Layout";
 
 function App() {
   return (
@@ -15,22 +16,23 @@ function App() {
           {/* <============ User Routes Start here ============> */}
 
           {/* <------------- Home Page --------------> */}
-          <Route path="/" element={<Home />} />
+
+          <Route path="/" element={ <Layout> <Home /> </Layout> }/>
 
           {/* <-------------- Blogs Page ---------------> */}
-          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs" element={ <Layout> <Blogs /> </Layout> }/>
 
           {/* <-------------- Blogs Details Page ---------------> */}
-          <Route path="/blogs/details" element={<BlogDetailsPage />} />
+          <Route path="/blogs/details" element={ <Layout> <BlogDetailsPage /> </Layout> }/>
 
           {/* <-------------- Contact Page ---------------> */}
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Layout> <Contact /> </Layout>}/>
 
           {/* <-------------- Contact Page ---------------> */}
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<Layout> <About /> </Layout>}/>
 
           {/* <-------------- Contact Page ---------------> */}
-          <Route path="/community" element={<Community />} />
+          <Route path="/community" element={<Layout><Community /></Layout>}/>
 
           {/* <============ User Routes End here ============> */}
         </Routes>

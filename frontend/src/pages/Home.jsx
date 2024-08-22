@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 const Home = () => {
   return (
     <section className="w-full">
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection
         title1="Adventures"
         title2="Blogs Platform"
@@ -19,7 +19,7 @@ const Home = () => {
 
       <FeaturedBlogs />
       <HomePageBlogs/>
-      <Footer/>
+      {/* <Footer/> */}
     </section>
   );
 };

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import BlogInfo from "./BlogInfo";
+import BlogCardInfo from "./BlogCardInfo";
 import img1 from "../../assets/1.jpg";
 import img2 from "../../assets/2.jpg";
 import img3 from "../../assets/3.jpg";
 import img4 from "../../assets/4.jpg";
 
-const Blog = () => {
+const BlogCard = () => {
   const [data, setData] = useState([]);
 
   const fetchedData = [
@@ -78,7 +78,7 @@ const Blog = () => {
               author,
               createdAt,
             }) => (
-              <BlogInfo
+              <BlogCardInfo
                 key={_id}
                 title={title}
                 desc={desc}
@@ -96,4 +96,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogCard;

@@ -4,9 +4,9 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="w-full py-0 flex items-center justify-center text-sm sticky top-0 z-50 bg-[#fffafa] ">
+    <nav className="w-full py-0 flex items-center justify-center text-sm sticky top-0 z-50 navbar drop-shadow">
       {/* Mobile Navigation */}
-      <div className="w-full flex h-14 items-center justify-between sm:hidden border-b px-4">
+      <div className="w-full flex h-16 items-center justify-between sm:hidden border-b border-slate-50 px-4">
         <div className="flex items-center relative">
           <div className="flex items-center gap-x-2">
             <div className="w-8 h-8 rounded-full bg-orange-200"></div>
@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="w-8 h-8 bg-green-200 rounded-full cursor-pointer"></div>
       </div>
       {/* DeskTop Navigation */}
-      <div className="w-full items-center h-14 justify-between hidden sm:flex md:px-10 lg:px-20 border-b px-3">
+      <div className="w-full items-center h-16 justify-between hidden sm:flex md:px-10 lg:px-20 border-b border-slate-50 px-3">
         <div className="flex items-center gap-x-3 md:gap-x-5">
           <div className="w-8 h-8 rounded-full bg-orange-200"></div>
           <span className="text-lg font-semibold orange_gradient ">

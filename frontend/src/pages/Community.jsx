@@ -1,8 +1,11 @@
+import CommunityHeroSection from "../components/community/CommunityHeroSection";
+import CommunityMembersSection from "../components/community/CommunityMembersSection";
 
 const Community = () => {
   return (
     <section className="w-full">
-      Community Page
+      <CommunityHeroSection />
+      <CommunityMembersSection />
     </section>
   );
 };

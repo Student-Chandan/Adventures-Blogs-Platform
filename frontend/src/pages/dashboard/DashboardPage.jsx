@@ -2,7 +2,7 @@ import DashboardCards from "../../components/dashboard/DashboardCards";
 
 const DashboardPage = () => {
   return (
-    <section className="">
+    <section className="w-full">
       <div className="w-full py-6 px-8 flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold">

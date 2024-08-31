@@ -1,13 +1,10 @@
-import Footer from "../components/Footer";
 import FeaturedBlogs from "../components/home/FeaturedBlogs";
 import HeroSection from "../components/home/HeroSection";
 import HomePageBlogs from "../components/home/HomePageBlogs";
-import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
     <section className="w-full">
-      {/* <Navbar /> */}
       <HeroSection
         title1="Adventures"
         title2="Blogs Platform"
@@ -19,7 +16,6 @@ const Home = () => {
 
       <FeaturedBlogs />
       <HomePageBlogs/>
-      {/* <Footer/> */}
     </section>
   );
 };

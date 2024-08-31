@@ -17,11 +17,16 @@ import Dashboard from "./pages/dashboard/Dashboard";
 
 // <============= Components imports strat here =============>
 import Layout from "./components/Layout";
+import DashboardPage from "./pages/dashboard/DashboardPage";
+import DashboardBlogsPage from "./pages/dashboard/DashboardBlogsPage";
+import AddBlogs from "./pages/dashboard/AddBlogs";
+import PendingBlogs from "./pages/dashboard/PendingBlogs";
+import Settings from "./pages/dashboard/Settings";
 
 function App() {
   return (
     <>
-      <main className="flex items-center justify-center flex-col">
+      <main className="flex items-center justify-center flex-col bg-white">
         <Routes>
           {/* <============ User Routes Start here ============> */}
 
@@ -48,7 +53,16 @@ function App() {
 
           {/* <============ Dashboard Routes Start here ============> */}
 
-          <Route path="/dashboard" element={<Dashboard/>} />
+          <Route path="/dashboard" element={<Dashboard/>} >
+            <Route path="" element={<DashboardPage/>} />
+            <Route path="blogs" element={<DashboardBlogsPage/>} />
+            <Route path="blogs/add" element={<AddBlogs/>} />
+            <Route path="blogs/pending" element={<PendingBlogs/>} />
+            <Route path="settings" element={<Settings/>} />
+
+            <Route path="blogs" element={<DashboardBlogsPage/>} />
+            <Route path="blogs" element={<DashboardBlogsPage/>} />
+          </Route>
           {/* <============ Dashboard Routes End here ============> */}
         </Routes>
       </main>

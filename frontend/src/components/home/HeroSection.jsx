@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const HeroSection = ({ title1, title2, desc }) => {
   return (
-    <section className="px-5 lg:px-20 sm:h-[500px] w-full bg-yellow-50 relative flex-center">
+    <section className="px-5 lg:px-20 sm:h-[500px] w-full relative flex-center">
       <div className=" max-w-[800px] py-10 flex-center flex-col">
         <h1 className="head_text text-center">
           {title1} <span className="orange_gradient">{title2}</span>

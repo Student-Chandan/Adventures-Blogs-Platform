@@ -1,11 +1,9 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import img1 from "../assets/1.jpg";
-import BlogPageSidebar from "../components/blogs/BlogPageSidebar";
-import BlogForm from "../components/blogs/BlogForm";
-import BlogTags from "../components/blogs/BlogTags";
-import RelatedTopics from "../components/blogs/RelatedTopics";
-import BlogContent from "../components/blogs/BlogContent";
+import img1 from "../../assets/1.jpg";
+import BlogPageSidebar from "../../components/blogs/BlogPageSidebar";
+import BlogForm from "../../components/blogs/BlogForm";
+import BlogTags from "../../components/blogs/BlogTags";
+import RelatedTopics from "../../components/blogs/RelatedTopics";
+import BlogContent from "../../components/blogs/BlogContent";
 
 const BlogDetailsPage = () => {
   return (
@@ -65,7 +63,6 @@ const BlogDetailsPage = () => {
                 <h2 className="py-8 text-2xl font-semibold pl-3 relative after:absolute after:w-[6px] after:h-8 after:bg-red-200 after:left-0">
                   Added Comments
                 </h2>
-                
               </div>
             </div>
             <BlogPageSidebar />

@@ -7,7 +7,7 @@ const MapBox = () => {
         className="w-full h-full"
         height="450"
         style={{ border: "0" }}
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>

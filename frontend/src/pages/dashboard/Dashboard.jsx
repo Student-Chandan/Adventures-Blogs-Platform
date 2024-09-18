@@ -6,14 +6,21 @@ import DashboardPage from "./DashboardPage";
 import AddBlogs from "./AddBlogs";
 import Settings from "./Settings";
 import PendingBlogs from "./PendingBlogs";
+import { useState } from "react";
 
 const Dashboard = () => {
+  const [sidebar, setSidebar] = useState(false);
+
   return (
     <section className="w-full bg-[#f7fcfc]">
       <DashboardNavbar />
       <div className="flex h-[90vh]">
-        <Sidebar />
-        <section className="w-[85vw] h-[90vh] bg-[#f7fcfc] overflow-auto pb-5">
+        <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
+        <section
+          className={`w-[93.5vw] lg:${
+            sidebar === true ? "w-[93.5vw]" : "w-[82vw]"
+          } h-[90vh] bg-[#f7fcfc] overflow-auto pb-5`}
+        >
           <Outlet>
             <DashboardPage />
             <DashboardBlogsPage />

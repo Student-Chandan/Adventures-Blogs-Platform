@@ -1,5 +1,5 @@
-import CommunityHeroSection from "../components/community/CommunityHeroSection";
-import CommunityMembersSection from "../components/community/CommunityMembersSection";
+import CommunityHeroSection from "../../components/community/CommunityHeroSection";
+import CommunityMembersSection from "../../components/community/CommunityMembersSection";
 
 const Community = () => {
   return (
